@@ -1,0 +1,17 @@
+{
+  "navbar": {
+    "buttonText": "Login",
+    "links": [
+      { "label": "Quick Links", "href": "links" },
+      { "label": "OWC Notes", "href": "notes" },
+      { "label": "OWCT", "href": "owct" }
+    ]
+  },
+  "footer": {
+    "copyright": " by Albin. All rights are reserved.",
+    "links": [
+      { "href": "/privacy-policy", "label": "Privacy Policy" },
+      { "href": "/terms-of-service", "label": "Terms of Service" }
+    ]
+  }
+}

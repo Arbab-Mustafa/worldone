@@ -1,0 +1,157 @@
+.root {
+  @apply flex flex-shrink-0 items-center justify-center gap-2 rounded-full border border-transparent text-center outline-none transition duration-150 ease-in-out focus:outline-none active:outline-none;
+}
+
+/********** SIZE **********/
+
+.root[data-size="small"] {
+  @apply h-8 px-3 text-sm font-medium;
+}
+
+.root[data-size="medium"] {
+  @apply text-input h-10 px-3.5 font-medium;
+}
+
+.root[data-size="large"] {
+  @apply h-14 px-8 py-4 text-xl font-semibold;
+}
+
+.root[data-size="large"] svg {
+  @apply h-6 w-6;
+}
+
+.root[data-size="medium"] svg {
+  @apply h-5 w-5;
+}
+
+.root[data-size="small"] svg {
+  @apply h-4 w-4;
+}
+
+/**********   COLOR: PRIMARY **********/
+
+.root[data-color="primary"][data-variant="solid"] {
+  @apply bg-primary-solid text-primary-on-primary;
+}
+
+.root[data-color="primary"][data-variant="soft"] {
+  @apply bg-primary-bg-hover text-primary-text;
+}
+
+.root[data-color="primary"][data-variant="surface"] {
+  @apply border-primary-border bg-primary-bg-subtle text-primary-text border;
+}
+
+.root[data-color="primary"][data-variant="outline"] {
+  @apply border-primary-border text-primary-text border bg-transparent;
+}
+
+.root[data-color="primary"][data-variant="ghost"] {
+  @apply text-primary-text;
+}
+
+.root[data-color="purple"][data-variant="solid"] {
+  @apply bg-[#8306F9] text-primary-on-primary;
+}
+
+/********** COLOR: GRAY **********/
+
+.root[data-color="gray"][data-variant="solid"] {
+  @apply bg-fg-solid text-bg-base;
+}
+
+.root[data-color="gray"][data-variant="soft"] {
+  @apply bg-bg-bg-hover text-fg-text-contrast;
+}
+
+.root[data-color="gray"][data-variant="surface"] {
+  @apply border-fg-border bg-bg-bg-subtle text-fg-text-contrast border;
+}
+
+.root[data-color="gray"][data-variant="outline"] {
+  @apply border-fg-border text-fg-text-contrast border bg-transparent;
+}
+
+.root[data-color="gray"][data-variant="ghost"] {
+  @apply text-fg-text-contrast;
+}
+
+/********** COLOR: PRIMARY, HOVER **********/
+
+.root[data-color="primary"][data-variant="solid"]:hover {
+  @apply bg-primary-solid-hover;
+}
+
+.root[data-color="primary"][data-variant="soft"]:hover {
+  @apply bg-primary-bg-active;
+}
+
+.root[data-color="primary"][data-variant="surface"]:hover {
+  @apply border-primary-border-hover;
+}
+
+.root[data-color="primary"][data-variant="outline"]:hover {
+  @apply border-primary-border bg-primary-bg;
+}
+
+.root[data-color="primary"][data-variant="ghost"]:hover {
+  @apply bg-primary-bg-hover;
+}
+
+/********** COLOR: GRAY, HOVER **********/
+
+.root[data-color="gray"][data-variant="solid"]:hover {
+  @apply bg-fg-solid-hover;
+}
+
+.root[data-color="gray"][data-variant="soft"]:hover {
+  @apply bg-bg-bg-active;
+}
+
+.root[data-color="gray"][data-variant="surface"]:hover {
+  @apply border-fg-border-hover;
+}
+
+.root[data-color="gray"][data-variant="outline"]:hover {
+  @apply border-fg-border bg-bg-bg;
+}
+
+.root[data-color="gray"][data-variant="ghost"]:hover {
+  @apply bg-bg-bg-hover;
+}
+
+/********** PRIMARY DISABLED **********/
+
+.root[data-color="primary"][data-variant="solid"]:disabled,
+.root[data-color="primary"][data-variant="soft"]:disabled {
+  @apply bg-bg-bg;
+}
+
+.root[data-color="primary"][data-variant="surface"]:disabled {
+  @apply border-fg-line bg-bg-bg-subtle;
+}
+
+.root[data-color="primary"][data-variant="outline"]:disabled {
+  @apply border-fg-line bg-transparent;
+}
+
+.loading {
+  @apply cursor-default border-zinc-600 bg-zinc-700 text-zinc-500;
+}
+
+/********** COMMON **********/
+
+.root[data-color="primary"][data-variant="ghost"],
+.root[data-color="gray"][data-variant="ghost"],
+.root[data-color="primary"][data-variant="ghost"]:disabled {
+  @apply bg-transparent;
+}
+
+.root[data-color="primary"]:hover,
+.root[data-color="gray"]:hover {
+  @apply cursor-pointer;
+}
+
+.root[data-color="primary"]:disabled {
+  @apply text-fg-border-hover cursor-default;
+}
