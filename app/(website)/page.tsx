@@ -1,4 +1,4 @@
-import { Hero } from "@/components/sections/hero";''''
+import { Hero } from "@/components/sections/hero";''
 import { OWCNotes } from "@/components/sections/owc-notes";
 import OWCTokenInfo from "@/components/sections/owct";
 import { QuickLinks } from "@/components/sections/quick-links";
